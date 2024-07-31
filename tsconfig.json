@@ -4,8 +4,6 @@
     "rootDir": ".",
     "outDir": "./dist",
     "sourceMap": true,
-    "esModuleInterop": false,
-    "target": "es2020",
     "module": "commonjs",
     "declaration": true,
     "strict": true,
@@ -17,15 +15,24 @@
     "declarationMap": true,
     "inlineSourceMap": false,
     "inlineSources": true,
-    "allowJs": false,
     "allowSyntheticDefaultImports": false,
     "pretty": false,
     "noErrorTruncation": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "target": "es2022",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "noUncheckedIndexedAccess": true
   },
   "include": [
     "src/**/*.ts",
     "test/**/*.ts"
   ]
 }
+
+
